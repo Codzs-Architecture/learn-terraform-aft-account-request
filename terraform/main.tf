@@ -9,7 +9,7 @@ module "sandbox" {
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "001"
   }
-
+ 
   account_tags = {
     "org" = "Codzs"
     "dept" = "POC"
