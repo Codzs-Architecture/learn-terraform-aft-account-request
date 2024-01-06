@@ -32,11 +32,11 @@ module "network_nonproduction001" {
 
   control_tower_parameters = {
     AccountEmail              = "network.nonproduction001@codzs.space"
-    AccountName               = "network nonproduction"
+    AccountName               = "Network Non-Pproduction"
     ManagedOrganizationalUnit = "Network"
     SSOUserEmail              = "network.nonproduction001@codzs.space"
-    SSOUserFirstName          = "network"
-    SSOUserLastName           = "nonproduction001"
+    SSOUserFirstName          = "Network"
+    SSOUserLastName           = "Nonproduction001"
   }
   
   account_tags = {
@@ -61,11 +61,11 @@ module "network_production001" {
 
   control_tower_parameters = {
     AccountEmail              = "network.production001@codzs.space"
-    AccountName               = "network production"
+    AccountName               = "Network Production"
     ManagedOrganizationalUnit = "Network"
     SSOUserEmail              = "network.production001@codzs.space"
-    SSOUserFirstName          = "network"
-    SSOUserLastName           = "production001"
+    SSOUserFirstName          = "Network"
+    SSOUserLastName           = "Production001"
   }
   
   account_tags = {
@@ -82,5 +82,63 @@ module "network_production001" {
     group = "prod"
   }
 
-  account_customizations_name = "Network production"
+  account_customizations_name = "Network Production"
+}
+
+module "shared_nonproduction001" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "shared.nonproduction001@codzs.space"
+    AccountName               = "Shared Non-Pproduction"
+    ManagedOrganizationalUnit = "NonProduction"
+    SSOUserEmail              = "shared.nonproduction001@codzs.space"
+    SSOUserFirstName          = "Shared"
+    SSOUserLastName           = "Nonproduction001"
+  }
+  
+  account_tags = {
+    "org" = "Codzs"
+    "dept" = "Application"
+  }
+ 
+  change_management_parameters = {
+    change_requested_by = "Application Team"
+    change_reason       = "To create non-production shared service"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "Shared Non-production"
+}
+
+module "shared_production001" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "shared.production001@codzs.space"
+    AccountName               = "Shared Pproduction"
+    ManagedOrganizationalUnit = "Production"
+    SSOUserEmail              = "shared.production001@codzs.space"
+    SSOUserFirstName          = "Shared"
+    SSOUserLastName           = "Production001"
+  }
+  
+  account_tags = {
+    "org" = "Codzs"
+    "dept" = "Application"
+  }
+ 
+  change_management_parameters = {
+    change_requested_by = "Application Team"
+    change_reason       = "To create production shared service"
+  }
+
+  custom_fields = {
+    group = "prod"
+  }
+
+  account_customizations_name = "Shared production"
 }
