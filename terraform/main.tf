@@ -43,7 +43,6 @@ module "network_nonproduction001" {
   account_tags = {
     "org" = "Codzs"
     "dept" = "Network"
-    "env" = "np"
   }
  
   change_management_parameters = {
@@ -73,7 +72,6 @@ module "network_production001" {
   account_tags = {
     "org" = "Codzs"
     "dept" = "Network"
-    "env" = "prod"
   }
  
   change_management_parameters = {
@@ -103,7 +101,6 @@ module "shared_nonproduction001" {
   account_tags = {
     "org" = "Codzs"
     "dept" = "Application"
-    "env" = "np"
   }
  
   change_management_parameters = {
@@ -133,7 +130,6 @@ module "shared_production001" {
   account_tags = {
     "org" = "Codzs"
     "dept" = "Application"
-    "env" = "prod"
   }
  
   change_management_parameters = {
