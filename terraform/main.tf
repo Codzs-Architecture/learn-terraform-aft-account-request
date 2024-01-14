@@ -120,7 +120,7 @@ module "shared_production001" {
   control_tower_parameters = {
     AccountEmail              = "shared.production001@codzs.space"
     AccountName               = "Shared Production"
-    ManagedOrganizationalUnit = "Production"
+    ManagedOrganizationalUnit = "Network"
     SSOUserEmail              = "shared.production001@codzs.space"
     SSOUserFirstName          = "Shared"
     SSOUserLastName           = "Production001"
