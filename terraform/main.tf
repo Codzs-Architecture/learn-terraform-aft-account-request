@@ -28,63 +28,63 @@ module "sandbox" {
   account_customizations_name = "Poc1-Sandbox"
 }
 
-module "network_nonproduction001" {
-  source = "./modules/aft-account-request"
+# module "network_nonproduction001" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "network.nonproduction001@codzs.space"
-    AccountName               = "Network Non-Production"
-    ManagedOrganizationalUnit = "Non-Production Workload"
-    SSOUserEmail              = "network.nonproduction001@codzs.space"
-    SSOUserFirstName          = "Network"
-    SSOUserLastName           = "Nonproduction001"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "network.nonproduction001@codzs.space"
+#     AccountName               = "Network Non-Production"
+#     ManagedOrganizationalUnit = "Non-Production Workload"
+#     SSOUserEmail              = "network.nonproduction001@codzs.space"
+#     SSOUserFirstName          = "Network"
+#     SSOUserLastName           = "Nonproduction001"
+#   }
   
-  account_tags = {
-    "org" = "Codzs"
-    "dept" = "Network"
-  }
+#   account_tags = {
+#     "org" = "Codzs"
+#     "dept" = "Network"
+#   }
  
-  change_management_parameters = {
-    change_requested_by = "Networking Team"
-    change_reason       = "To create non-production network"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "Networking Team"
+#     change_reason       = "To create non-production network"
+#   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+#   custom_fields = {
+#     group = "non-prod"
+#   }
 
-  account_customizations_name = "Network Non-production"
-}
+#   account_customizations_name = "Network Non-production"
+# }
 
-module "network_production001" {
-  source = "./modules/aft-account-request"
+# module "network_production001" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "network.production001@codzs.space"
-    AccountName               = "Network Production"
-    ManagedOrganizationalUnit = "Production Workload"
-    SSOUserEmail              = "network.production001@codzs.space"
-    SSOUserFirstName          = "Network"
-    SSOUserLastName           = "Production001"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "network.production001@codzs.space"
+#     AccountName               = "Network Production"
+#     ManagedOrganizationalUnit = "Production Workload"
+#     SSOUserEmail              = "network.production001@codzs.space"
+#     SSOUserFirstName          = "Network"
+#     SSOUserLastName           = "Production001"
+#   }
   
-  account_tags = {
-    "org" = "Codzs"
-    "dept" = "Network"
-  }
+#   account_tags = {
+#     "org" = "Codzs"
+#     "dept" = "Network"
+#   }
  
-  change_management_parameters = {
-    change_requested_by = "Networking Team"
-    change_reason       = "To create production network"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "Networking Team"
+#     change_reason       = "To create production network"
+#   }
 
-  custom_fields = {
-    group = "prod"
-  }
+#   custom_fields = {
+#     group = "prod"
+#   }
 
-  account_customizations_name = "Network Production"
-}
+#   account_customizations_name = "Network Production"
+# }
 
 module "shared_nonproduction001" {
   source = "./modules/aft-account-request"
