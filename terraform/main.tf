@@ -34,7 +34,7 @@ module "network_nonproduction001" {
   control_tower_parameters = {
     AccountEmail              = "network.nonproduction001@codzs.space"
     AccountName               = "Network Non-Production"
-    ManagedOrganizationalUnit = "Sandbox"
+    ManagedOrganizationalUnit = "Non-Production Workload"
     SSOUserEmail              = "network.nonproduction001@codzs.space"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Nonproduction001"
@@ -64,7 +64,7 @@ module "network_production001" {
   control_tower_parameters = {
     AccountEmail              = "network.production001@codzs.space"
     AccountName               = "Network Production"
-    ManagedOrganizationalUnit = "Sandbox"
+    ManagedOrganizationalUnit = "Production Workload"
     SSOUserEmail              = "network.production001@codzs.space"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Production001"
@@ -94,7 +94,7 @@ module "shared_nonproduction001" {
   control_tower_parameters = {
     AccountEmail              = "shared.nonproduction001@codzs.space"
     AccountName               = "Shared Non-Production"
-    ManagedOrganizationalUnit = "Sandbox"
+    ManagedOrganizationalUnit = "Non-Production Workload"
     SSOUserEmail              = "shared.nonproduction001@codzs.space"
     SSOUserFirstName          = "Shared"
     SSOUserLastName           = "Nonproduction001"
@@ -124,7 +124,7 @@ module "shared_production001" {
   control_tower_parameters = {
     AccountEmail              = "shared.production001@codzs.space"
     AccountName               = "Shared Production"
-    ManagedOrganizationalUnit = "Sandbox"
+    ManagedOrganizationalUnit = "Production Workload"
     SSOUserEmail              = "shared.production001@codzs.space"
     SSOUserFirstName          = "Shared"
     SSOUserLastName           = "Production001"
