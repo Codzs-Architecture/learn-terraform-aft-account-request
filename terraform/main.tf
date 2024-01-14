@@ -63,7 +63,7 @@ module "network_production001" {
   control_tower_parameters = {
     AccountEmail              = "network.production001@codzs.space"
     AccountName               = "Network Production"
-    ManagedOrganizationalUnit = "Management"
+    ManagedOrganizationalUnit = "Workload"
     SSOUserEmail              = "network.production001@codzs.space"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Production001"
