@@ -91,7 +91,7 @@ module "shared_nonproduction001" {
   control_tower_parameters = {
     AccountEmail              = "shared.nonproduction001@codzs.space"
     AccountName               = "Shared Non-Production"
-    ManagedOrganizationalUnit = "NonProduction"
+    ManagedOrganizationalUnit = "Network"
     SSOUserEmail              = "shared.nonproduction001@codzs.space"
     SSOUserFirstName          = "Shared"
     SSOUserLastName           = "Nonproduction001"
