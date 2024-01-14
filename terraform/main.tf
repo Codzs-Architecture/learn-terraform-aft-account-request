@@ -34,7 +34,7 @@ module "network_nonproduction001" {
   control_tower_parameters = {
     AccountEmail              = "network.nonproduction001@codzs.space"
     AccountName               = "Network Non-Production"
-    ManagedOrganizationalUnit = "Workload"
+    ManagedOrganizationalUnit = "Non-Production Workload"
     SSOUserEmail              = "network.nonproduction001@codzs.space"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Nonproduction001"
@@ -63,7 +63,7 @@ module "network_production001" {
   control_tower_parameters = {
     AccountEmail              = "network.production001@codzs.space"
     AccountName               = "Network Production"
-    ManagedOrganizationalUnit = "Workload"
+    ManagedOrganizationalUnit = "Production Workload"
     SSOUserEmail              = "network.production001@codzs.space"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Production001"
