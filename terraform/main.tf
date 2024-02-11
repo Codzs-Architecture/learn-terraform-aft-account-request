@@ -25,7 +25,7 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Poc1-Sandbox"
+  account_customizations_name = "Poc1_Sandbox"
 }
 
 module "network_nonproduction001" {
@@ -55,7 +55,7 @@ module "network_nonproduction001" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Network Non-production"
+  account_customizations_name = "Network_Non_Production"
 }
 
 module "network_production001" {
@@ -85,7 +85,7 @@ module "network_production001" {
     group = "prod"
   }
 
-  account_customizations_name = "Network Production"
+  account_customizations_name = "Network_Production"
 }
 
 module "shared_nonproduction001" {
@@ -115,7 +115,7 @@ module "shared_nonproduction001" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Shared Non-production"
+  account_customizations_name = "Shared_Non_production"
 }
 
 module "shared_production001" {
@@ -145,5 +145,5 @@ module "shared_production001" {
     group = "prod"
   }
 
-  account_customizations_name = "Shared production"
+  account_customizations_name = "Shared_Production"
 }
